@@ -3,6 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Perfil from "./Imagenes/Perfil.jpeg";
 import Perfil1 from "./Imagenes/Perfil1.jpeg";
+import Perfil3 from "./Imagenes/Perfil3.jpeg";
+
 
 const Sidebar = () => {
   return (
@@ -32,7 +34,7 @@ const Sidebar = () => {
 
         <Carousel.Item>
           <Card>
-            <Card.Img variant="top" src={Perfil} alt="Imagen 3" />
+            <Card.Img variant="top" src={Perfil3} alt="Imagen 3" />
             <Card.Body>
               <Card.Title>Joaquin Coronel</Card.Title>
               <Card.Text>Sit officia qui incididunt laboris tempor incididunt nostrud. Irure laboris ut consectetur veniam proident.</Card.Text>

@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div className="grid-layout">
     <div class="caja c1">
-      <Header title="Titulo de la Página" />
+      <Header title="The Home Academy" />
     </div>
 
     <div class="caja c2">
