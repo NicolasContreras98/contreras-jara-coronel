@@ -1,14 +1,47 @@
-import React from 'react';
-import { Image } from 'react-bootstrap';
+import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "react-bootstrap/Card";
+import Perfil from "./Imagenes/Perfil.jpeg";
+import Perfil1 from "./Imagenes/Perfil1.jpeg";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <Image src="ruta-de-la-imagen" roundedCircle />
-      <h1>Título de la barra lateral</h1>
-      <p>Descripción de la barra lateral</p>
+      <Carousel>
+        <Carousel.Item>
+          <Card>
+            <Card.Img variant="top" src={Perfil1} alt="Imagen 1" />
+            <Card.Body>
+              <Card.Title>Nicolas Contreras</Card.Title>
+              <Card.Text>Sit officia qui incididunt laboris tempor incididunt nostrud. Irure laboris ut consectetur veniam proident.</Card.Text>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <Card >
+            <Card.Img variant="top" src={Perfil} alt="Imagen 2" />
+            <Card.Body>
+              <Card.Title>Joaquin Jara</Card.Title>
+              <Card.Text>
+              Sit officia qui incididunt laboris tempor incididunt nostrud. Irure laboris ut consectetur veniam proident.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <Card>
+            <Card.Img variant="top" src={Perfil} alt="Imagen 3" />
+            <Card.Body>
+              <Card.Title>Joaquin Coronel</Card.Title>
+              <Card.Text>Sit officia qui incididunt laboris tempor incididunt nostrud. Irure laboris ut consectetur veniam proident.</Card.Text>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
-}
+};
 
 export default Sidebar;

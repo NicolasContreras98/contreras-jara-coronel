@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./index.css";
 import Header from "./Componentes/Header";
 import Menu from "./Componentes/Menu";
@@ -11,16 +13,26 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div className="App">
-      <Header title="Título de la página" />
-      <div className="container">
-        <div className="grid-container">
-          <Menu />
-          <Content />
-          <Sidebar />
-        </div>
-      </div>
+  <div className="grid-layout">
+    <div class="caja c1">
+      <Header title="Titulo de la Página" />
+    </div>
+
+    <div class="caja c2">
+      <Menu />
+    </div>
+
+    <div class="caja c3">
+      <Content />
+    </div>
+
+    <div class="caja c4">
+      <Sidebar />
+    </div>
+
+    <div class="caja c5">
       <Footer />
+    </div>
   </div>
-)
+);
 reportWebVitals();

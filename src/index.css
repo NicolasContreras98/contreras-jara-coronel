@@ -1,56 +1,112 @@
-body{
-  background-color: #333;
+body {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='31' height='30' patternTransform='scale(1) rotate(20)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M0 22.5h30v15H0zm15-15h30v15H15m-30-15h30v15h-30zm15-15h30v15H0z' transform='translate(0.5,0)' stroke-width='0.5' stroke='hsla(259, 0%, 23%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+
   color: white;
+  padding-bottom: 200px;
+  margin: 10px;
 }
 
-.App {
-  text-align: center;
+
+
+.grid-layout {
+  /* height: 500px; */
+  display: grid;
+  grid-template-areas:
+    "cabecera cabecera"
+    "menu menu"
+    "contenido lateral"
+    "footer footer";
+  grid-template-columns: 80% auto;
+  grid-template-rows: 10% 20% auto 10%;
 }
 
-.container {
+.caja {
+  background-color: #111;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid violet;
+  border-radius: 20px;
+}
+
+.c1 {
+  grid-area: cabecera;
+  height: 70px;
+}
+
+.c2 {
+  grid-area: menu;
   margin-top: 20px;
+  
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  gap: 20px;
+.c3 {
+  grid-area: contenido;
 }
 
-.menu {
-  background-color: #222;
-  padding: 20px;
+.c4 {
+  grid-area: lateral;
 }
+
+.c5 {
+  grid-area: footer;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+
+
 
 .content {
-  background-color: #222;
-  padding: 20px;
+  margin-top: 10px;
 }
 
 .sidebar {
-  background-color: #222;
+  height: 100%;
+}
+
+.tituloContent{
+  text-decoration: underline;
+}
+
+.footer{
   padding: 20px;
-  text-align: center;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
+  font-size: 1.5em;
 }
 
-li {
-  margin-bottom: 10px;
+.miembro {
+  color: crimson;
 }
 
-li.miembro {
-  text-decoration: line-through;
+button {
+  margin-right: 10px;
 }
 
-header,
-footer {
-  background-color: #222;
-  padding: 20px;
-  margin-top: 10px;
+.card {
+  background-color: #111;
+  border-radius: 20px;
+}
+.card-text {
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+.card-img-top{
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+}
+.carousel.slide {
+  height: 100%;
+}
+
+.copyright{
+  font-size: 1.1em;
 }

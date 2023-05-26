@@ -1,10 +1,14 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 const Menu = () => {
   return (
     <div className="menu">
-      {/* Coloca aquí los elementos del menú */}
-      <h1>Menú</h1>
+      <Button variant="secondary" > INICIO </Button>
+      <Button variant="secondary" > ARCHIVOS </Button>
+      <Button variant="secondary" > AYUDA </Button>
+      <Button variant="secondary" > ACERCA DE </Button>
+
     </div>
   );
 }
