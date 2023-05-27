@@ -1,8 +1,9 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import Perfil from "./Imagenes/Perfil.jpeg";
+
 import Perfil1 from "./Imagenes/Perfil1.jpeg";
+import Perfil2 from "./Imagenes/Perfil2.jpeg";
 import Perfil3 from "./Imagenes/Perfil3.jpeg";
 
 
@@ -22,7 +23,7 @@ const Sidebar = () => {
 
         <Carousel.Item>
           <Card >
-            <Card.Img variant="top" src={Perfil} alt="Imagen 2" />
+            <Card.Img variant="top" src={Perfil2} alt="Imagen 2" />
             <Card.Body>
               <Card.Title>Joaquin Jara</Card.Title>
               <Card.Text>
